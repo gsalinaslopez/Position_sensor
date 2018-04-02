@@ -58,7 +58,9 @@ The app output format is as follows:
 
 Workflow
 ---------------
-Included is a basic TCP socket script called **client.py**, usual workflow would go as follows:
+Included is a basic TCP socket script called **client.py** and the apk called **Application-debug.apk**
+
+Usual workflow would go as follows:
 
 1. Execute *adb forward tcp:6666 tcp:6666*
 2. Start the application, stay at 'camera' mode
