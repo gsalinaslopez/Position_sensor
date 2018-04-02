@@ -1,90 +1,73 @@
 
-Android Camera2Basic Sample
+Position sensor
 ===================================
 
-This sample demonstrates how to use basic functionalities of Camera2
-API. You can learn how to iterate through characteristics of all the
-cameras attached to the device, display a camera preview, and take
-pictures.
 
 Introduction
 ------------
 
-The [Camera2 API][1] provides an interface to individual camera
-devices connected to an Android device. It replaces the deprecated
-Camera class.
-
-Use [getCameraIdList][2] to get a list of all the available
-cameras. You can then use [getCameraCharacteristics][3] and find the
-best camera that suits your need (front/rear facing, resolution etc).
-
-Create an instance of [CameraDevice.StateCallback][4] and open a
-camera. It is ready to start camera preview when the camera is opened.
-
-This sample uses TextureView to show the camera preview. Create a
-[CameraCaptureSession][5] and set a repeating [CaptureRequest][6] to it.
-
-Still image capture takes several steps. First, you need to lock the
-focus of the camera by updating the CaptureRequest for the camera
-preview. Then, in a similar way, you need to run a precapture
-sequence. After that, it is ready to capture a picture. Create a new
-CaptureRequest and call [capture][7]. Don't forget to unlock the focus
-when you are done.
-
-[1]: https://developer.android.com/reference/android/hardware/camera2/package-summary.html
-[2]: https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraIdList()
-[3]: https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraCharacteristics(java.lang.String)
-[4]: https://developer.android.com/reference/android/hardware/camera2/CameraDevice.StateCallback.html
-[5]: https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html
-[6]: https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html
-[7]: https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#capture(android.hardware.camera2.CaptureRequest, android.hardware.camera2.CameraCaptureSession.CaptureCallback, android.os.Handler)
 
 Pre-requisites
 --------------
 
+### Compile
 - Android SDK 27
 - Android Build Tools v27.0.2
 - Android Support Repository
 
-Screenshots
--------------
-
-<img src="screenshots/main.png" height="400" alt="Screenshot"/> 
+### Run
+- Minimun SDK version 21
+- adb shell
 
 Getting Started
 ---------------
 
-This sample uses the Gradle build system. To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
+To interface with the application via the command line connect the phone to the computer via USB and then run the following from the command line to:
+```
+adb forward tcp:6100 tcp:6666
+```
+The above command forwards the computer (host) port 6100 to the app's port 6666
+change the first parameter to whatever you need, leave the second parameter intact.
 
-Support
--------
+Once setup the forwarding rule, open up any TCP socket application and connect to the specified host port *(port 6100 in the above example)*
 
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
+Once connected, send the following string to start listening to position updates:
+```
+start [-p polling rate] [-e event detection threshold] [-t movement detection threshold]
+```
+For example, running 
+```
+start -p 500 -e 0.2 -t 1.5
+```
+Will start the position updates with an log rate of 500ms, set the event detection threshold to 0.2 and movement detection threshold to 1.5
 
-If you've found an error in this sample, please file an issue:
-https://github.com/googlesamples/android-Camera2Basic
+The default values are -p 100ms, -e 0.3 and -t 1.0, if not specified.
 
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
+The app output format is as follows:
+```
+[xraw:val, yraw:val, xsqr:val, ysqr:val, compass:val, pitch:val]
+```
 
-License
--------
+*xraw* and *yraw* are the acceleromenter's raw output value.
 
-Copyright 2017 The Android Open Source Project, Inc.
+*xsqr* and *ysqr* are the squarewave output value, let it be 1, -1 or 0
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
+*compass* is the degree with respect to earth's geomagnetic north
 
-http://www.apache.org/licenses/LICENSE-2.0
+*pitch* is the smartphone's 'lean' value in degrees.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+Workflow
+---------------
+Included is a basic TCP socket script called **client.py**, usual workflow would go as follows:
+
+1. Execute *adb forward tcp:6666 tcp:6666*
+2. Start the application, stay at 'camera' mode
+3. Execute **client.py** script and type *start* with your desired parameters (start alone works fine with default parameters)
+4. Check **client.py** stdout for sensor log output
+
+
+SideNotes
+---------------
+You have to be in the 'camera' mode for the TCP command to work, don't send the command when in 'chart' mode. Fix is on the way
+
+Whenever running a new configuration, kill and restart the app first, and then initiate a new TCP connection.

@@ -15,7 +15,7 @@
 */
 package com.example.android.camera2basic.tests;
 
-import com.example.android.camera2basic.*;
+import com.example.android.camera2basic.ui.CameraActivity;
 
 import android.test.ActivityInstrumentationTestCase2;
 
