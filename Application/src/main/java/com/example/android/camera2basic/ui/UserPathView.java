@@ -34,12 +34,15 @@ public class UserPathView extends View {
 
     private Paint pathPaint;
     private Paint userCirclePaint;
+    private Paint userOrientationPaint;
     private List<double[]> userPathList = new ArrayList<double[]>();
 
     private RectF rimRect;
 
     private float x;
     private float y;
+    private double mOrientationDegrees;
+
     public UserPathView(Context context) {
         super(context);
         init();
@@ -72,13 +75,19 @@ public class UserPathView extends View {
         pathPaint.setColor(Color.parseColor("#4CAF50"));
         pathPaint.setStyle(Paint.Style.STROKE);
 
+        userOrientationPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        userOrientationPaint.setStrokeWidth(10.01f);
+        userOrientationPaint.setColor(Color.parseColor("#5F819D"));
+        userOrientationPaint.setStyle(Paint.Style.STROKE);
+
         userCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         userCirclePaint.setStyle(Paint.Style.FILL);
         userCirclePaint.setColor(Color.RED);
     }
 
-    public void updateUserPathList(double[] newPos) {
+    public void updateUserPathList(double[] newPos, int orientationDegrees) {
         this.userPathList.add(new double[]{newPos[0], newPos[1]});
+        this.mOrientationDegrees = Math.toRadians(orientationDegrees) * -1;
         this.invalidate();
     }
 
@@ -105,6 +114,15 @@ public class UserPathView extends View {
                         //centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25), pathPaint);
                 if (i + 1 == this.userPathList.size() - 1) {
                     canvas.drawCircle(centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25), 15, userCirclePaint);
+
+                    float newCenterX = centerX + (int)end[0];
+                    float newCenterY = centerY - (int)end[1];
+
+                    double newX = newCenterX + Math.sin(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
+                    double newY = newCenterY + Math.cos(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
+
+                    canvas.drawLine(centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25),
+                            (float)newX, (float)newY, userOrientationPaint);
                 }
             }
         }

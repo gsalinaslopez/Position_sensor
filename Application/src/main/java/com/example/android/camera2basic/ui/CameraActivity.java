@@ -150,7 +150,7 @@ public class CameraActivity extends AppCompatActivity {
                 position[1] = doubles[7];
 
                 ((UserPathView)(findViewById(R.id.user_path_view)))
-                        .updateUserPathList(position);
+                        .updateUserPathList(position, (int)mOrientationDegrees);
             }
         });
     }
