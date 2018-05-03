@@ -33,15 +33,15 @@ Once setup the forwarding rule, open up any TCP socket application and connect t
 
 Once connected, send the following string to start listening to position updates:
 ```
-start [-p polling rate] [-e event detection threshold] [-t movement detection threshold]
+start [-p polling rate] [-e event detection threshold] [-xt movement detection threshold (x-axis)] [-yt movement detection threshold (y-axis)]
 ```
 For example, running 
 ```
-start -p 500 -e 0.2 -t 1.5
+start -p 500 -e 0.2 -xt 1.5 -yt 1.0
 ```
-Will start the position updates with an log rate of 500ms, set the event detection threshold to 0.2 and movement detection threshold to 1.5
+Will start the position updates with an log rate of 500ms, set the event detection threshold to 0.2 and movement detection threshold to 1.5 for the x-axis and 1.0 for the y-axis
 
-The default values are -p 100ms, -e 0.3 and -t 1.0, if not specified.
+The default values are -p 100ms, -e 0.3, -xt 1.0 and -yt 1.0, if not specified.
 
 The app output format is as follows:
 ```

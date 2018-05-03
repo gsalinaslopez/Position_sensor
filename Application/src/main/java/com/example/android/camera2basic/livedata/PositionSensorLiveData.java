@@ -83,7 +83,8 @@ public class PositionSensorLiveData extends LiveData<double[]> {
     private int mSteps = 0;
 
     private static int RMS_WINDOW = 10;
-    private static float RMS_THRESHOLD = 1;
+    private static float X_RMS_THRESHOLD = 1;
+    private static float Y_RMS_THRESHOLD = 1;
     private Queue<Float> xAcceleration = new LinkedList<Float>();
     private int X_CURRENT_SIGN = 0;
     private Queue<Float> yAcceleration = new LinkedList<Float>();
@@ -113,8 +114,9 @@ public class PositionSensorLiveData extends LiveData<double[]> {
         registerPositionSensorListener();
     }
 
-    public void setParams(float eventThreshold, float rmsThreshold) {
-        RMS_THRESHOLD = rmsThreshold;
+    public void setParams(float eventThreshold, float xRmsThreshold, float yRmsThreshold) {
+        X_RMS_THRESHOLD = xRmsThreshold;
+        Y_RMS_THRESHOLD = yRmsThreshold;
     }
 
     @Override
@@ -309,7 +311,7 @@ public class PositionSensorLiveData extends LiveData<double[]> {
         } else {
             xAcceleration.remove();
             xAcceleration.add(mAccelerometerReading[0]);
-            returnValue = getSquareWaveValue(xAcceleration, X_CURRENT_SIGN);
+            returnValue = getSquareWaveValue(xAcceleration, X_CURRENT_SIGN, X_RMS_THRESHOLD);
             output[1] = returnValue[0];
             X_CURRENT_SIGN = returnValue[1];
         }
@@ -318,13 +320,13 @@ public class PositionSensorLiveData extends LiveData<double[]> {
         } else {
             yAcceleration.remove();
             yAcceleration.add(mAccelerometerReading[1]);
-            returnValue = getSquareWaveValue(yAcceleration, Y_CURRENT_SIGN);
+            returnValue = getSquareWaveValue(yAcceleration, Y_CURRENT_SIGN, Y_RMS_THRESHOLD);
             output[3] = returnValue[0];
             Y_CURRENT_SIGN = returnValue[1];
         }
     }
 
-    private int[] getSquareWaveValue(Queue<Float> queue, int CURRENT_SIGN) {
+    private int[] getSquareWaveValue(Queue<Float> queue, int CURRENT_SIGN, float threshold) {
         double MS = 0;
         double M = 0;
         for (Float i : queue) {
@@ -335,7 +337,7 @@ public class PositionSensorLiveData extends LiveData<double[]> {
         M = M / RMS_WINDOW;
         double RMS = Math.sqrt(MS);
 
-        if (RMS > RMS_THRESHOLD) {
+        if (RMS > threshold) {
             if (CURRENT_SIGN == 0) {
                 if (M < 0) {
                     return new int[] {-3, 1};
@@ -452,7 +454,7 @@ public class PositionSensorLiveData extends LiveData<double[]> {
         } else {
             eastAcceleration.remove();
             eastAcceleration.add((float)output[8]);
-            returnValue = getSquareWaveValue(eastAcceleration, EAST_CURRENT_SIGN);
+            returnValue = getSquareWaveValue(eastAcceleration, EAST_CURRENT_SIGN, X_RMS_THRESHOLD);
             output[9] = returnValue[0];
             EAST_CURRENT_SIGN = returnValue[1];
         }
@@ -461,7 +463,7 @@ public class PositionSensorLiveData extends LiveData<double[]> {
         } else {
             northAcceleration.remove();
             northAcceleration.add((float)output[10]);
-            returnValue = getSquareWaveValue(northAcceleration, NORTH_CURRENT_SIGN);
+            returnValue = getSquareWaveValue(northAcceleration, NORTH_CURRENT_SIGN, Y_RMS_THRESHOLD);
             output[11] = returnValue[0];
             NORTH_CURRENT_SIGN = returnValue[1];
         }

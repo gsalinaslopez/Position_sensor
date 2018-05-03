@@ -113,10 +113,15 @@ public class UserPathView extends View {
                 //canvas.drawLine(centerX + (float)start[0] * 25, centerY - ((float)start[1] * 25),
                         //centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25), pathPaint);
                 if (i + 1 == this.userPathList.size() - 1) {
-                    canvas.drawCircle(centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25), 15, userCirclePaint);
+                    float userCenterX = centerX + (float)end[0] * 25;
+                    float userCenterY = centerY - ((float)end[1] * 25);
 
-                    float newCenterX = centerX + (int)end[0];
-                    float newCenterY = centerY - (int)end[1];
+                    canvas.drawCircle(userCenterX, userCenterY, 15, userCirclePaint);
+
+                    //float newCenterX = centerX + (int)end[0];
+                    //float newCenterY = centerY - (int)end[1];
+                    float newCenterX = userCenterX;
+                    float newCenterY = userCenterY;
 
                     double newX = newCenterX + Math.sin(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
                     double newY = newCenterY + Math.cos(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);

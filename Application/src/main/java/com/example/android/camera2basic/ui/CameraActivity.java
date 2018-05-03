@@ -73,7 +73,8 @@ public class CameraActivity extends AppCompatActivity {
 
     private int mPollingPeriod = 100;
     private float mEventThreshold = 0.3f;
-    private float mRMSThreshold = 1.0f;
+    private float mXRMSThreshold = 1.0f;
+    private float mYRMSThreshold = 1.0f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,7 +125,7 @@ public class CameraActivity extends AppCompatActivity {
 
     public void startPositionSensorLiveDataObserve() {
         PositionSensorLiveData mPositionSensorLiveData = PositionSensorLiveData.get(getApplicationContext());
-        mPositionSensorLiveData.setParams(mEventThreshold, mRMSThreshold);
+        mPositionSensorLiveData.setParams(mEventThreshold, mXRMSThreshold, mYRMSThreshold);
         mPositionSensorLiveData.observe(this, new Observer<double[]>() {
             @Override
             public void onChanged(@Nullable double[] doubles) {
@@ -219,8 +220,11 @@ public class CameraActivity extends AppCompatActivity {
                                     if (arg.equals("-e") && i+1 <= input.length - 1) {
                                         mEventThreshold = Float.parseFloat(input[i + 1]);
                                     }
-                                    if (arg.equals("-t") && i+1 <= input.length - 1) {
-                                        mRMSThreshold = Float.parseFloat(input[i + 1]);
+                                    if (arg.equals("-xt") && i+1 <= input.length - 1) {
+                                        mXRMSThreshold = Float.parseFloat(input[i + 1]);
+                                    }
+                                    if (arg.equals("-yt") && i+1 <= input.length - 1) {
+                                        mYRMSThreshold = Float.parseFloat(input[i + 1]);
                                     }
                                     i++;
                                 }
