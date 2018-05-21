@@ -429,20 +429,20 @@ public class PositionSensorLiveData extends LiveData<double[]> {
     private void computeGlobalRotationAcceleration() {
         float[] rotationMatrix = new float[16];
         System.arraycopy(mRotationMatrix, 0, rotationMatrix, 0, mRotationMatrix.length);
-        //Log.d("ORIENTATION", "rotationMatrix:" + Arrays.toString(rotationMatrix));
+        Log.d("ORIENTATION", "rotationMatrix:" + Arrays.toString(rotationMatrix));
 
         float[] inverseRotationMatrix = new float[16];
         android.opengl.Matrix.invertM(inverseRotationMatrix, 0, rotationMatrix, 0);
-        //Log.d("ORIENTATION", "inverseRotationMatrix:" + Arrays.toString(inverseRotationMatrix));
+        Log.d("ORIENTATION", "inverseRotationMatrix:" + Arrays.toString(inverseRotationMatrix));
 
         float[] acceleration = new float[4];
         acceleration[0] = mAccelerometerReading[0]; acceleration[1] = mAccelerometerReading[1]; acceleration[2] = mAccelerometerReading[2];
         acceleration[3] = 0;
-        //Log.d("ORIENTATION", "acceleration:" + Arrays.toString(acceleration));
+        Log.d("ORIENTATION", "acceleration:" + Arrays.toString(acceleration));
 
         float[] globalAcceleration = new float[16];
         android.opengl.Matrix.multiplyMV(globalAcceleration, 0, inverseRotationMatrix, 0, acceleration, 0);
-        //Log.d("ORIENTATION", "globalAcceleration:" + Arrays.toString(globalAcceleration));
+        Log.d("ORIENTATION", "globalAcceleration:" + Arrays.toString(globalAcceleration));
 
         output[8] = globalAcceleration[0];
         output[10] = globalAcceleration[1];

@@ -4,7 +4,7 @@
             "outputFile": "/home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "/home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/22e16f030338da371dd121ee5017df88/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0e4217d7be37a5a5a417fb3803dcc833/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

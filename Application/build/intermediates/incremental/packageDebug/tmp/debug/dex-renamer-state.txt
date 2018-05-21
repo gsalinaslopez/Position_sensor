@@ -1,0 +1,4 @@
+#Tue May 15 23:21:29 CST 2018
+base.0=/home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/build/intermediates/transforms/dexMerger/debug/37
+path.0=classes.dex
+renamed.0=classes.dex

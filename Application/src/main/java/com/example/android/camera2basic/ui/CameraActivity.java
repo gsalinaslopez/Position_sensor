@@ -86,35 +86,6 @@ public class CameraActivity extends AppCompatActivity {
                     .commit();
         }
 
-        /*PositionSensorLiveData.get(getApplicationContext()).observe(this, new Observer<double[]>() {
-            @Override
-            public void onChanged(@Nullable double[] doubles) {
-                mEast = doubles[1];
-                mNorth = doubles[3];
-                String x = String.format(Locale.getDefault(), "%.2f", doubles[0]);
-                String y = String.format(Locale.getDefault(), "%.2f", doubles[2]);
-
-                ((TextView)(findViewById(R.id.accelerationTextView)))
-                        .setText("x:" + x + ", y:" + y);
-
-                mOrientationDegrees = doubles[4];
-
-                ((TextView)(findViewById(R.id.compassTextView)))
-                        .setText(Integer.toString((int)mOrientationDegrees));
-
-                mSteps = (int)doubles[5];
-                ((TextView)(findViewById(R.id.stepCountTextView)))
-                        .setText(Integer.toString(mSteps) + " steps");
-
-                double[] position = new double[2];
-                position[0] = doubles[6];
-                position[1] = doubles[7];
-
-                ((UserPathView)(findViewById(R.id.user_path_view)))
-                        .updateUserPathList(position);
-            }
-        });*/
-
         initTCPServerConnection();
     }
 
@@ -151,7 +122,7 @@ public class CameraActivity extends AppCompatActivity {
                 position[1] = doubles[7];
 
                 ((UserPathView)(findViewById(R.id.user_path_view)))
-                        .updateUserPathList(position, (int)mOrientationDegrees);
+                        .updateUserPathList(position, (int)mOrientationDegrees, 0);
             }
         });
     }

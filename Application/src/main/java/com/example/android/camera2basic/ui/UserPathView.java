@@ -85,9 +85,9 @@ public class UserPathView extends View {
         userCirclePaint.setColor(Color.RED);
     }
 
-    public void updateUserPathList(double[] newPos, int orientationDegrees) {
+    public void updateUserPathList(double[] newPos, int orientationDegrees, int mapOffset) {
         this.userPathList.add(new double[]{newPos[0], newPos[1]});
-        this.mOrientationDegrees = Math.toRadians(orientationDegrees) * -1;
+        this.mOrientationDegrees = Math.toRadians(orientationDegrees + mapOffset) * -1;
         this.invalidate();
     }
 
@@ -118,16 +118,24 @@ public class UserPathView extends View {
 
                     canvas.drawCircle(userCenterX, userCenterY, 15, userCirclePaint);
 
-                    //float newCenterX = centerX + (int)end[0];
-                    //float newCenterY = centerY - (int)end[1];
                     float newCenterX = userCenterX;
                     float newCenterY = userCenterY;
 
                     double newX = newCenterX + Math.sin(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
                     double newY = newCenterY + Math.cos(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
 
-                    canvas.drawLine(centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25),
-                            (float)newX, (float)newY, userOrientationPaint);
+                    double leftTipX = newX + Math.sin(Math.toRadians(225) * -1) * (newY - 30) - newY;
+                    double leftTipY = newY + Math.cos(Math.toRadians(225) * -1) * (newY - 30) - newY;
+
+                    double rightTipX = newX + Math.sin(Math.toRadians(135) * -1) * (newY - 30) - newY;
+                    double rightTipY = newY + Math.cos(Math.toRadians(135) * -1) * (newY - 30) - newY;
+
+                    //canvas.drawLine(centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25),
+                            //(float)newX, (float)newY, userOrientationPaint);
+                    canvas.drawLine((float)newX, (float)newY,
+                        (float)leftTipX, (float)leftTipY, userOrientationPaint);
+                    canvas.drawLine((float)newX, (float)newY,
+                        (float)rightTipX, (float)rightTipY, userOrientationPaint);
                 }
             }
         }

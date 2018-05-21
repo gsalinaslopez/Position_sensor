@@ -4,7 +4,7 @@
             "outputFile": "/home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/gio/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/1ef347b2c97e962744b758edd5edb12e/res/values-v23/values-v23.xml",
+                    "source": "/home/gio/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/200a9c259c2a66ae267d966f360cab4c/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/22e16f030338da371dd121ee5017df88/res/values-v23/values-v23.xml",
+                    "source": "/home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0e4217d7be37a5a5a417fb3803dcc833/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
