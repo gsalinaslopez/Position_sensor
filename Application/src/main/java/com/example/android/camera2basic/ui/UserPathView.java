@@ -42,6 +42,7 @@ public class UserPathView extends View {
     private float x;
     private float y;
     private double mOrientationDegrees;
+    private double mOrientationRadians;
 
     public UserPathView(Context context) {
         super(context);
@@ -87,7 +88,8 @@ public class UserPathView extends View {
 
     public void updateUserPathList(double[] newPos, int orientationDegrees, int mapOffset) {
         this.userPathList.add(new double[]{newPos[0], newPos[1]});
-        this.mOrientationDegrees = Math.toRadians(orientationDegrees + mapOffset) * -1;
+        this.mOrientationDegrees = orientationDegrees;
+        this.mOrientationRadians = Math.toRadians(orientationDegrees + mapOffset) * -1;
         this.invalidate();
     }
 
@@ -121,14 +123,17 @@ public class UserPathView extends View {
                     float newCenterX = userCenterX;
                     float newCenterY = userCenterY;
 
-                    double newX = newCenterX + Math.sin(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
-                    double newY = newCenterY + Math.cos(mOrientationDegrees) * ((newCenterY - 40) - newCenterY);
+                    double newX = newCenterX + Math.sin(mOrientationRadians) * ((newCenterY - 40) - newCenterY);
+                    double newY = newCenterY + Math.cos(mOrientationRadians) * ((newCenterY - 40) - newCenterY);
 
-                    double leftTipX = newX + Math.sin(Math.toRadians(225) * -1) * (newY - 30) - newY;
-                    double leftTipY = newY + Math.cos(Math.toRadians(225) * -1) * (newY - 30) - newY;
+                    //canvas.drawLine(userCenterX, userCenterY,
+                            //(float)newX, (float)newY, userOrientationPaint);
 
-                    double rightTipX = newX + Math.sin(Math.toRadians(135) * -1) * (newY - 30) - newY;
-                    double rightTipY = newY + Math.cos(Math.toRadians(135) * -1) * (newY - 30) - newY;
+                    double leftTipX = newX + Math.sin(Math.toRadians(mOrientationDegrees + 225) * -1) * ((newY - 30) - newY);
+                    double leftTipY = newY + Math.cos(Math.toRadians(mOrientationDegrees + 225) * -1) * ((newY - 30) - newY);
+
+                    double rightTipX = newX + Math.sin(Math.toRadians(mOrientationDegrees + 135) * -1) * ((newY - 30) - newY);
+                    double rightTipY = newY + Math.cos(Math.toRadians(mOrientationDegrees + 135) * -1) * ((newY - 30) - newY);
 
                     //canvas.drawLine(centerX + (float)end[0] * 25, centerY - ((float)end[1] * 25),
                             //(float)newX, (float)newY, userOrientationPaint);
