@@ -88,7 +88,7 @@ public class UserPathView extends View {
 
     public void updateUserPathList(double[] newPos, int orientationDegrees, int mapOffset) {
         this.userPathList.add(new double[]{newPos[0], newPos[1]});
-        this.mOrientationDegrees = orientationDegrees;
+        this.mOrientationDegrees = orientationDegrees + mapOffset;
         this.mOrientationRadians = Math.toRadians(orientationDegrees + mapOffset) * -1;
         this.invalidate();
     }
