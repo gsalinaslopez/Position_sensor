@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:16:1-42:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/gio/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b2338d86e5d159f47ab7d2750e0b7acb/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0881008e56fe536923fbdab86c8a3c12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.KalebKE:FSensor:v1.0] /home/gio/.gradle/caches/transforms-1/files-1.1/FSensor-v1.0.aar/d0026ed20eee85719e62641de3513dc1/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:support-v13:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-v13-27.1.1.aar/e79d8a1fda225a59bb8735f5f5ce8003/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/6b5c015d059ac9d48e6052a9e5cdab04/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/200a9c259c2a66ae267d966f360cab4c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0e4217d7be37a5a5a417fb3803dcc833/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/fce1d2d272c141de0ab4e6fd3de274a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/d9c624a9f7b58308a23b913e997a648f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/beaa64bc72173c7e2ed96ae3c2979a63/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c71bf4ddf9e0197da2cdb2223195d4a5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c08b362c8a79c0233e949ecd6102c99/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0cc3ae7697fc3ebdae64ba1e569e0b15/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/668f43fa13d735bec5b48f7974da0b0a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/346d80d23682c9a2f763c1ec4039a729/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ccdbe7568b02db1d3e68384f52805e4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0e8840e03092e242f3dbdf23e74028be/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/ff924de6ad36f1213ba2bd898d01008d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fb96ac7634b0aa15becaf307f42d8391/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f592a036151a1b2e15c18b3b966a5a74/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8419beb3d4d5bacbb3e815c21a4e119e/AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:17:5-47
+	xmlns:android
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:16:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:19:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:20:5-65
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:20:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:22:5-60
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:22:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:23:5-70
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:23:19-67
+application
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:25:5-40:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/gio/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b2338d86e5d159f47ab7d2750e0b7acb/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/gio/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b2338d86e5d159f47ab7d2750e0b7acb/AndroidManifest.xml:9:5-20
+MERGED from [com.github.KalebKE:FSensor:v1.0] /home/gio/.gradle/caches/transforms-1/files-1.1/FSensor-v1.0.aar/d0026ed20eee85719e62641de3513dc1/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.KalebKE:FSensor:v1.0] /home/gio/.gradle/caches/transforms-1/files-1.1/FSensor-v1.0.aar/d0026ed20eee85719e62641de3513dc1/AndroidManifest.xml:11:5-15:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:22:5-28:19
+	android:supportsRtl
+		ADDED from [com.github.KalebKE:FSensor:v1.0] /home/gio/.gradle/caches/transforms-1/files-1.1/FSensor-v1.0.aar/d0026ed20eee85719e62641de3513dc1/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:28:9-41
+	android:icon
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:27:9-45
+	android:allowBackup
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:26:9-35
+	android:theme
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:29:9-45
+activity#com.example.android.camera2basic.ui.CameraActivity
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:30:9-38:20
+	android:label
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:32:13-45
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:31:13-46
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:36:27-74
+activity#com.example.android.camera2basic.ui.ChartActivity
+ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:39:9-63
+	android:name
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml:39:19-51
+uses-sdk
+INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/gio/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b2338d86e5d159f47ab7d2750e0b7acb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/gio/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b2338d86e5d159f47ab7d2750e0b7acb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0881008e56fe536923fbdab86c8a3c12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0881008e56fe536923fbdab86c8a3c12/AndroidManifest.xml:20:5-44
+MERGED from [com.github.KalebKE:FSensor:v1.0] /home/gio/.gradle/caches/transforms-1/files-1.1/FSensor-v1.0.aar/d0026ed20eee85719e62641de3513dc1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.KalebKE:FSensor:v1.0] /home/gio/.gradle/caches/transforms-1/files-1.1/FSensor-v1.0.aar/d0026ed20eee85719e62641de3513dc1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v13:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-v13-27.1.1.aar/e79d8a1fda225a59bb8735f5f5ce8003/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-v13-27.1.1.aar/e79d8a1fda225a59bb8735f5f5ce8003/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/6b5c015d059ac9d48e6052a9e5cdab04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/6b5c015d059ac9d48e6052a9e5cdab04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/200a9c259c2a66ae267d966f360cab4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/200a9c259c2a66ae267d966f360cab4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0e4217d7be37a5a5a417fb3803dcc833/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0e4217d7be37a5a5a417fb3803dcc833/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/fce1d2d272c141de0ab4e6fd3de274a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/fce1d2d272c141de0ab4e6fd3de274a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/d9c624a9f7b58308a23b913e997a648f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/d9c624a9f7b58308a23b913e997a648f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/beaa64bc72173c7e2ed96ae3c2979a63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/beaa64bc72173c7e2ed96ae3c2979a63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c71bf4ddf9e0197da2cdb2223195d4a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c71bf4ddf9e0197da2cdb2223195d4a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c08b362c8a79c0233e949ecd6102c99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c08b362c8a79c0233e949ecd6102c99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0cc3ae7697fc3ebdae64ba1e569e0b15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0cc3ae7697fc3ebdae64ba1e569e0b15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/668f43fa13d735bec5b48f7974da0b0a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/668f43fa13d735bec5b48f7974da0b0a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/346d80d23682c9a2f763c1ec4039a729/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/346d80d23682c9a2f763c1ec4039a729/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ccdbe7568b02db1d3e68384f52805e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ccdbe7568b02db1d3e68384f52805e4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0e8840e03092e242f3dbdf23e74028be/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0e8840e03092e242f3dbdf23e74028be/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/ff924de6ad36f1213ba2bd898d01008d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/ff924de6ad36f1213ba2bd898d01008d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fb96ac7634b0aa15becaf307f42d8391/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fb96ac7634b0aa15becaf307f42d8391/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f592a036151a1b2e15c18b3b966a5a74/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f592a036151a1b2e15c18b3b966a5a74/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8419beb3d4d5bacbb3e815c21a4e119e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8419beb3d4d5bacbb3e815c21a4e119e/AndroidManifest.xml:20:5-44
+INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+		ADDED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/src/main/AndroidManifest.xml
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /home/gio/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8c37725467cd1d7d90652757c18c9282/AndroidManifest.xml:24:13-83

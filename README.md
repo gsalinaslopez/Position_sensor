@@ -35,7 +35,7 @@ Once connected, send the following string to start listening to position updates
 ```
 start [-p polling rate] [-e event detection threshold] [-xt movement detection threshold (x-axis)] [-yt movement detection threshold (y-axis)]
 ```
-For example, running 
+For example, running
 ```
 start -p 500 -e 0.2 -xt 1.5 -yt 1.0
 ```
@@ -66,6 +66,11 @@ Usual workflow would go as follows:
 2. Start the application, stay at 'camera' mode
 3. Execute **client.py** script and type *start* with your desired parameters (start alone works fine with default parameters)
 4. Check **client.py** stdout for sensor log output
+
+
+Demo
+---------------
+![alt text](demo.gif)
 
 
 SideNotes
