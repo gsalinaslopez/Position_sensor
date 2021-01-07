@@ -70,7 +70,7 @@ Usual workflow would go as follows:
 
 Demo
 ---------------
-![alt text](demo.gif)
+![alt text](app_demo.gif)
 
 
 SideNotes
