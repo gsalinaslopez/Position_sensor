@@ -6,6 +6,9 @@ Position sensor
 Introduction
 ------------
 
+This Android application uses the built-in accelerometer and gyroscope to implement an Inertial Navigation Unit (INU) and trace the path the user has taken so far.
+
+Certain INU parameters are configurable via adb shell and a TCP socket connection. Instructions below.
 
 Pre-requisites
 --------------
@@ -70,6 +73,11 @@ Usual workflow would go as follows:
 
 Demo
 ---------------
+
+The number in the middle of the camera view represents the movement orientation with respect to the magnetic north.
+
+The view below is where the user's trajectory path is drawn in real time. The backgroud 'map' view is static and only serves as a placeholder.
+
 ![alt text](app_demo.gif)
 
 
