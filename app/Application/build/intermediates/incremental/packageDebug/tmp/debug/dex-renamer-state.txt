@@ -1,4 +1,7 @@
-#Mon May 28 13:30:22 CST 2018
-base.0=/home/gio/Workspace/AndroidStudioProjects/android-Camera2Basic/Application/build/intermediates/transforms/dexMerger/debug/37
+#Mon Sep 19 11:33:41 CST 2022
+base.0=/home/lalic/Workspace/AndroidStudioProjects/Position_sensor/app/Application/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/home/lalic/Workspace/AndroidStudioProjects/Position_sensor/app/Application/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

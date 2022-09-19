@@ -1,0 +1,49 @@
+com/example/android/camera2basic/ui/DynamicChart.java
+ com.example.android.camera2basic.ui.DynamicChart
+com/example/android/camera2basic/livedata/PositionSensorLiveData.java
+ com.example.android.camera2basic.livedata.PositionSensorLiveData
+ com.example.android.camera2basic.livedata.PositionSensorLiveData$1
+ com.example.android.camera2basic.livedata.PositionSensorLiveData$OrientationSensorCallback
+ com.example.android.camera2basic.livedata.PositionSensorLiveData$PositionSensorListener
+com/example/android/camera2basic/ui/AutoFitTextureView.java
+ com.example.android.camera2basic.ui.AutoFitTextureView
+com/example/android/camera2basic/ui/CameraActivity.java
+ com.example.android.camera2basic.ui.CameraActivity
+ com.example.android.camera2basic.ui.CameraActivity$1
+ com.example.android.camera2basic.ui.CameraActivity$2
+ com.example.android.camera2basic.ui.CameraActivity$3
+ com.example.android.camera2basic.ui.CameraActivity$OutThread
+ com.example.android.camera2basic.ui.CameraActivity$OutThread$handler
+com/example/android/camera2basic/ui/ChartFragment.java
+ com.example.android.camera2basic.ui.ChartFragment
+ com.example.android.camera2basic.ui.ChartFragment$1
+ com.example.android.camera2basic.ui.ChartFragment$OnFragmentInteractionListener
+com/example/android/camera2basic/viewmodel/PositionSensorViewModel.java
+ com.example.android.camera2basic.viewmodel.PositionSensorViewModel
+com/example/android/camera2basic/BuildConfig.java
+ com.example.android.camera2basic.BuildConfig
+com/example/android/camera2basic/ui/ChartActivity.java
+ com.example.android.camera2basic.ui.ChartActivity
+com/example/android/camera2basic/util/CustomOrientationComplimentaryFusion.java
+ com.example.android.camera2basic.util.CustomOrientationComplimentaryFusion
+com/example/android/camera2basic/ui/Camera2BasicFragment.java
+ com.example.android.camera2basic.ui.Camera2BasicFragment
+ com.example.android.camera2basic.ui.Camera2BasicFragment$1
+ com.example.android.camera2basic.ui.Camera2BasicFragment$2
+ com.example.android.camera2basic.ui.Camera2BasicFragment$3
+ com.example.android.camera2basic.ui.Camera2BasicFragment$4
+ com.example.android.camera2basic.ui.Camera2BasicFragment$5
+ com.example.android.camera2basic.ui.Camera2BasicFragment$6
+ com.example.android.camera2basic.ui.Camera2BasicFragment$7
+ com.example.android.camera2basic.ui.Camera2BasicFragment$8
+ com.example.android.camera2basic.ui.Camera2BasicFragment$CompareSizesByArea
+ com.example.android.camera2basic.ui.Camera2BasicFragment$ConfirmationDialog
+ com.example.android.camera2basic.ui.Camera2BasicFragment$ConfirmationDialog$1
+ com.example.android.camera2basic.ui.Camera2BasicFragment$ConfirmationDialog$2
+ com.example.android.camera2basic.ui.Camera2BasicFragment$ErrorDialog
+ com.example.android.camera2basic.ui.Camera2BasicFragment$ErrorDialog$1
+ com.example.android.camera2basic.ui.Camera2BasicFragment$ImageSaver
+com/example/android/camera2basic/ui/UserPathView.java
+ com.example.android.camera2basic.ui.UserPathView
+com/example/android/camera2basic/util/CustomOrientationFusion.java
+ com.example.android.camera2basic.util.CustomOrientationFusion
