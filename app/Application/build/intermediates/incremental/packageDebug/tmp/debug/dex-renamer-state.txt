@@ -1,4 +1,4 @@
-#Mon Sep 19 11:33:41 CST 2022
+#Wed Sep 21 10:11:49 CST 2022
 base.0=/home/lalic/Workspace/AndroidStudioProjects/Position_sensor/app/Application/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

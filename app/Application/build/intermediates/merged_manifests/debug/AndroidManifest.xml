@@ -19,7 +19,7 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="27" />
+        android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -29,6 +29,7 @@
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -47,8 +48,8 @@
         <activity android:name="com.example.android.camera2basic.ui.ChartActivity" />
 
         <provider
-            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.example.android.camera2basic.lifecycle-trojan"
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.android.camera2basic.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
     </application>

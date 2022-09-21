@@ -1,10 +1,8 @@
 package com.example.android.camera2basic.viewmodel;
 
 import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.support.annotation.NonNull;
-
-import com.example.android.camera2basic.livedata.PositionSensorLiveData;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.annotation.NonNull;
 
 /**
  * Created by gio on 4/2/18.

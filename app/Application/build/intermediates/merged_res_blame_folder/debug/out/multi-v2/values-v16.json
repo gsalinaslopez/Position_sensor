@@ -4,7 +4,7 @@
             "outputFile": "/home/lalic/Workspace/AndroidStudioProjects/Position_sensor/app/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/2fd1badfe235a86c9c4f24dc039376c6/appcompat-v7-27.1.1/res/values-v16/values-v16.xml",
+                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/ec2a639313b576d820886b92c65549de/appcompat-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/b5a1b086f5f1cb641bc0eaedaf84b95f/support-compat-27.1.1/res/values-v16/values-v16.xml",
+                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/4fa96a30a609219e9d73eea686ac383a/core-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

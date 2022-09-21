@@ -5,15 +5,14 @@ package com.example.android.camera2basic.livedata;
  */
 
 import android.app.Activity;
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.support.annotation.MainThread;
+import androidx.annotation.MainThread;
 import android.util.Log;
-import android.view.Surface;
 
 import com.example.android.camera2basic.util.CustomOrientationComplimentaryFusion;
 import com.example.android.camera2basic.util.CustomOrientationFusion;

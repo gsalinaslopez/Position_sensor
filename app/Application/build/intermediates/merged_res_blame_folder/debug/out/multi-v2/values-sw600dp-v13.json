@@ -13,11 +13,30 @@
                         "endOffsets": "719,787"
                     },
                     "to": {
-                        "startLines": "18,19",
+                        "startLines": "19,20",
                         "startColumns": "4,4",
-                        "startOffsets": "1170,1238",
+                        "startOffsets": "1173,1241",
                         "endColumns": "67,67",
-                        "endOffsets": "1233,1301"
+                        "endOffsets": "1236,1304"
+                    }
+                },
+                {
+                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,680",
+                        "endLines": "2,3,4,5,6,7,9,10,11,15",
+                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,675,847"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,18,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "611,671,741,812,884,942,1000,1109,1309,1372",
+                        "endLines": "10,11,12,13,14,15,17,18,21,25",
+                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
+                        "endOffsets": "666,736,807,879,937,995,1104,1168,1367,1539"
                     }
                 },
                 {
@@ -31,41 +50,22 @@
                         "endOffsets": "861"
                     },
                     "to": {
-                        "startLines": "25",
+                        "startLines": "26",
                         "startColumns": "4",
-                        "startOffsets": "1551",
-                        "endLines": "29",
+                        "startOffsets": "1544",
+                        "endLines": "30",
                         "endColumns": "12",
-                        "endOffsets": "1791"
+                        "endOffsets": "1784"
                     }
                 },
                 {
-                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/2fd1badfe235a86c9c4f24dc039376c6/appcompat-v7-27.1.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/ec2a639313b576d820886b92c65549de/appcompat-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "/home/lalic/.gradle/caches/transforms-2/files-2.1/7672364edf7d2fb87874b79bd4922003/design-27.1.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
-                        "endLines": "2,3,4,5,6,7,8,9,10,14",
-                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
-                    },
-                    "to": {
-                        "startLines": "10,11,12,13,14,15,16,17,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1106,1306,1369",
-                        "endLines": "10,11,12,13,14,15,16,17,20,24",
-                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "666,736,807,879,937,995,1101,1165,1364,1546"
                     }
                 }
             ]
